@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* descendent can be at any nesting level
+        .grandparent> p{
+            color: red;
+        } */
+         div~p{
+            color: blanchedalmond;}
+            /* + is used to target immediate sibling very next sibling */
+            div+p{
+                color: blue;
+            }
+    </style>
+</head>
+<body>
+    <!-- combinators-combinaton of multiple selectors -->
+     <!-- grand parent -->
+    <div class="grandparent">
+        <p>child</p>
+        <!-- parent -->
+         <div>
+            <p> grand child</p>
+         </div>
+    </div>
+</body>
+</html>

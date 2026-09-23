@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div { 
+            height:200px;
+            width:200px;
+            background-color: indianred;
+        }
+        /*  Hover is triggered during cursor interaction */
+        div:hover {
+            background-color: indigo;
+        }
+        /* Active is triggered during mouse click */
+        div:active{
+            background-color: red;
+        }
+        /* Focus is triggered after mouse click only for input */
+        input:focus {
+            background-color: aqua;
+        }
+        input:active {
+            background-color:aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- pseudo classes targets element state during interaction. It is represented by ":"-->
+     <div></div>
+
+    <br>
+
+     <input type="text">
+</body>
+</html>

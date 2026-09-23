@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div::after{
+            content: "GLA"
+        }
+        p::before{
+            content: "i am from "
+        }
+        span{
+            text-transform:capitalize
+        }
+        /* first letter /first line are applicable only to block level elements
+         */
+         section::first-letter{
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+         }
+         article::first-line{
+            color: blue;
+            font-family: cursive;
+         }
+    </style>
+</head>
+<body>
+    /* <!-- pseudo elements used to add /insert /modify specific content in the document. It is represented by "::" 
+      --> */
+    <div>i am from </div>
+    <p>mathura</p>
+    <section>i love codeing</section>
+    <article>i love codeing in night</article>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- transform: what type change should happen -->
+     <!-- transition:how smoothly the change should happen -->
+      <!-- timming func -->
+       <!-- ease -satrs slow and then fast and then slow again -->
+        <!-- linear- constant speed -->
+        <!-- ease-in- starts slow and then fast
+          ease-out- starts fast and then slow
+           ease-in-out- starts slow and then fast and then slow again
+            cubic-bezier- custom speed curve -->
+    <style>
+        .square{
+            height:200px;
+            width:200px;
+            background-color:blue;
+        }
+        .square:hover{
+            width:400px;
+            height:400px;
+            margin-left:100px;
+            background-color:red;
+        
+        /* transition :property-name duration timing-function delay; */
+        transition: all 2s 0.1s;}
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+    
+</body>
+</html>
