@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+<!-- width: 200px;              /* Content width */
+height: 100px;             /* Content height */
+
+padding: 20px;             /* Inside space */
+
+border: 5px solid black;   /* Border */
+
+margin: 30px;              /* Outside space */
+
+box-sizing: border-box;    /* Width includes padding + border */ -->
+    <style>
+        /* Box Model Example */
+        .box {
+            width: 200px;
+            height: 100px;
+
+            /* Space inside the border */
+            padding: 20px;
+
+            /* Border around padding and content */
+            border: 5px solid black;
+
+            /* Space outside the border */
+            margin: 30px;
+
+            background-color: lightblue;
+        }
+
+        /* Another example using border-box */
+        .box2 {
+            width: 200px;
+            height: 100px;
+
+            padding: 20px;
+            border: 5px solid red;
+            margin: 30px;
+
+            box-sizing: border-box;
+
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <h2>1. Content + Padding + Border + Margin</h2>
+
+    <div class="box">
+        Hello World
+    </div>
+
+    <h2>2. Using box-sizing: border-box</h2>
+
+    <div class="box2">
+        Hello World
+    </div>
+
+</body>
+</html>

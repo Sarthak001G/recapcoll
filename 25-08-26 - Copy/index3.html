@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNAL_CSS</title>
+    <style>
+        /* pseudo class-it is used to add interaction to the state of the ele  */
+        div{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        div:hover {
+            background-color: green;
+            color:brown
+        }
+        /*pseudo element -it is used to add /insert .modify content within the  content */
+        div::first-letter{
+            text-transform: uppercase;                                
+        }
+        div :: before{
+            content: "hello";
+            color: blue;
+        }   
+        div :: after{
+            content: "world";
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Element Selector -->
+    <!-- ID Selector-->
+    <!-- Class Selector-->
+    <!-- Internal CSS-->
+    <div>soo ja samo chcha</div>
+</body>
+</html>
